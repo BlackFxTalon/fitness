@@ -1362,6 +1362,7 @@ color: black;
 .education {
     background-color: var(--primary-color-red);
     padding: 50px 0;
+    scroll-margin-top: 3rem;
 }
 
 .education__form-title {
