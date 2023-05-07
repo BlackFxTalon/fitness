@@ -258,7 +258,7 @@ v-scope="{
                         <figure class="team__card">
                         <img loading="lazy" decoding="async" :src=`/resources/images/${card.img}` alt="image" width="112" height="112" class="team__img">
                         <figcaption class="team__figcaption">
-                             <h3 class="team__card-title">{{card.title}}</h3>
+                             <p class="team__card-title">{{card.title}}</p>
                              <p class="team__card-subtitle">
                                 <span>{{card.subtitle1}}</span>
                                 |
@@ -325,9 +325,9 @@ v-scope="{
                             {{course.date}}
                         </p>
                     </div>
-                    <h3 class="fitness-courses__card-title">
+                    <p class="fitness-courses__card-title">
                         {{course.text}}
-                    </h3>
+                    </p>
                  </article>
               </li>
             </ul>
@@ -335,9 +335,9 @@ v-scope="{
             <ul role="list" class="fitness-courses__descr-list">
                 <li class="fitness-courses__descr-list-item" v-for="(course,i) in courses" :key="i" v-show="courseToggler === course.number">
                     <article class="fitness-courses__descr">
-                        <h3 class="fitness-courses__descr-title">
+                        <p class="fitness-courses__descr-title">
                               {{course.descrTitle}}
-                        </h3>
+                        </p>
                         <div class="fitness-courses__descr-info">
                         <strong>Длительность: <span>81 Час</span></strong>
                         <strong>Теория: 30%; Практика: 70%</strong>
@@ -514,7 +514,7 @@ v-scope="{
                         <div class="fitness-courses__descr-info">
                         <strong>Длительность: <span>81 Час</span></strong>
                         <strong class="workshops__descr-strong-text">По окончанию выдаётся сертификат установленного образца</strong>
-                        <p class="fitness-courses__descr-text">Как управлять гормонами, которые регулируют наше пищевое поведение?</p>
+                        <p class="fitness-courses__descr-text workshops-list">Как управлять гормонами, которые регулируют наше пищевое поведение?</p>
                         </div>
                         <div class="fitness-courses__descr-bottom">
                         <a href="#" class="btn btn--primary fitness-courses__descr-link">Подробней в нашей группе</a>
@@ -535,8 +535,8 @@ v-scope="{
                             <div class="clients-feedback__card-top">
                                 <img loading="lazy" decoding="async" src="/resources/icons/clients-feedback-placeholder.svg" alt="image" width="50" height="50" class="clients-feedback__img">
                                 <div class="clients-feedback__card-right">
-                                    <h3 class="clients-feedback__card-title">Иван Александрович</h3>
-                                    <h4 class="clients-feedback__card-subtitle">Директор по фитнесу федеральной сети</h4>
+                                    <p class="clients-feedback__card-title">Иван Александрович</p>
+                                    <p class="clients-feedback__card-subtitle">Директор по фитнесу федеральной сети</p>
                                 </div>
                             </div>
                             <p class="clients-feedback__info">

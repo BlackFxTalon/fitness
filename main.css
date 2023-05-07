@@ -240,7 +240,7 @@ color: white;
 .custom-pagination {
     position: static;
     padding-top: 32px;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,7 +271,7 @@ color: white;
     left: 0;
     top: 0;
     transition: .3s ease-in-out;
-    transform: translate(0, 0) scale(0);
+    transform: translate(2.4px, 2.4px) scale(0.82);
 }
 
 .custom-pagination .swiper-pagination-bullet-active {
@@ -280,7 +280,6 @@ color: white;
 
 .custom-pagination .swiper-pagination-bullet-active::after {
     opacity: 1;
-    transform: translate(2.4px, 3px) scale(0.82);
 }
 
 .custom-slider-button-prev,
@@ -831,6 +830,11 @@ color: black;
     background-color: var(--grey-color);
     padding: 50px 0;
     margin-bottom: 50px;
+    scroll-margin-top: 3rem;
+}
+
+.documents__slider {
+    padding-top: 1px;
 }
 
 .documents__container {
@@ -854,7 +858,7 @@ color: black;
 .documents__card {
     background-color: white;
     border-bottom: 5px solid var(--primary-color-red);
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
@@ -997,6 +1001,7 @@ max-width: 35.2ch;
     background-color: var(--grey-color-2);
     padding-top: 50px;
     padding-bottom: 52px;
+    scroll-margin-top: 3rem;
 }
 
 .fitness-courses__container {
@@ -1135,6 +1140,7 @@ margin-right: auto;
 /* workshops */
 .workshops {
     padding: 50px 0;
+    scroll-margin-top: 3rem;
 }
 
 .workshops__container {
@@ -1256,6 +1262,7 @@ line-height: 14px;
 
 .faq {
     padding: 50px 0;
+    scroll-margin-top: 3rem;
 }
 
 .faq__list {
@@ -1770,6 +1777,11 @@ line-height: 23px;
         gap: 40px;
     }
 
+    .documents__slider {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
     .documents__card {
         max-width: 360px;
         height: 460px;
@@ -2109,6 +2121,10 @@ line-height: 16px;
     .faq__list {
         font-size: 16px;
 line-height: 19px;
+    }
+
+    .faq__list-item-top {
+        cursor: pointer;
     }
 
     .faq__question {
